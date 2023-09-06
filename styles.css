@@ -1,0 +1,98 @@
+header {
+    font-family: 'Rockwell', monospace;
+    font-size: xx-large;
+    text-align: left;
+    transition: background-color 0.3s ease;
+    margin-left: 30px;
+}
+
+header:hover {
+    background-color: #BC7F6A;
+}
+
+body {
+    color: #DCCCBE;
+    background-color: #4E5B47;   
+    text-align: center;
+}
+
+a {
+    color: #bc7f6a;
+}
+
+ul {
+    list-style:none;
+    list-style-position:inside;
+    padding-left: 0;
+    
+}
+
+.pics {
+    display: flex;
+}
+
+.pics img {
+    margin-right: 0;
+}
+
+.col {
+    float:inline-start;
+    width: 33.33%;
+    padding: 0px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.button-link {
+    display: inline-block; /* Make it a block-level element */
+    padding: 10px 20px; /* Add padding for spacing */
+    background-color: #DCCCBE; /* Button background color */
+    color: #bc7f6a; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    border: none; /* Remove the default border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Show a pointer cursor on hover */
+    margin: 5px
+}
+
+.button-link:hover {
+    color: #DCCCBE;
+    background-color: #BC7F6A;
+}
+
+.textbox {
+    line-height: 1.5;
+    text-align: center;
+    margin: auto;
+    width: 700px;
+    padding: 10px;
+    border: 3px dashed #bc7f6a;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.project1 {
+    display: flex;
+    align-items: center;
+}
+
+.text1 {
+    flex: 1;
+    padding: auto;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.image1 {
+    flex: 1;
+    text-align: center;
+    
+}
+
+.space {
+    margin: 50px;
+}

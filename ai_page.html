@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    
+    <body>
+        
+        <header>
+            <h1>AI Generated</h1>
+        </header>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Text Boxes with Animation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .text-box {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+        }
+
+        .plant-animation {
+            width: 200px;
+            height: 100px;
+            margin: 50px;
+            justify-content: center;
+            animation: floatPlants 5s infinite;
+        }
+
+        @keyframes floatPlants {
+            0% {
+                transform: translate(0, 0);
+            }
+            50% {
+                transform: translate(0, -10px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+    </style>
+
+    <div class="container">
+        <div class="text-box">
+            <h1>Goal of Prompt: create an html page with a plant animation</h1>
+        </div>
+        <div class="text-box">
+            <h1>Prompt: can you please generate an html page with 2 centered text boxes, one saying "goal of prompt" and the other one below it saying "prompt" and include an animation of light green plants below it?</h1>
+        </div>
+        <div class="plant-animation">
+            <!-- Add your animation of light green plants here -->
+            <img src="images/plant_animation.gif" alt="Plant Animation">
+        </div>
+    </div>
+</html>
