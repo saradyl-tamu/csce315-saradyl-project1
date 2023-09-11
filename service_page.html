@@ -1,36 +1,81 @@
 <!DOCTYPE html> 
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <!-- ensures proper rendering and touch zooming for all devices  -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link id="mainStyleSheet" rel="stylesheet" type="text/css" href="styles.css">
     </head>
 
     <body>
         
-        <header> 
-            <h1>Service</h1>
-        </header>
+        <div class="header1">
+            <header> 
+                <h1>Service</h1>
+            </header>
+        </div>
+        <div class="header2">
+            <header> 
+                <h1>SUBJECT: <span style="font-family: Bradley Hand;">Service</span></h1>
+            </header>
+        </div>
+
+        <div class="toggle_button">
+            <button onclick="toggleStyleSheet()" type="button">Toggle Style</button>
+        </div>
 
         <main>
-            <div class="textbox">
-                <p><strong>Tutoring:</strong> Throughout high school I volunteered as a tutor, helping other students complete homework and class assignments, as well as understand
-                difficult concepts.</p>
+            <div class="service_stuff">
+                <div class="textbox1_s">
+                    <h2>Tutoring:</h2>
+                    <p>Throughout high school I volunteered as a tutor, helping other students complete homework and class assignments, as well as understand
+                    difficult concepts.</p>
+                </div>
+                <div class="space"></div>
+                <div class="textbox2_s">
+                    <h2>Vounteer Coaching:</h2>
+                    <p>I volunteered multiple times coaching youth volleyball teams involved in different programs at <a href="https://www.nrgvbc.com/">NRG Volleyball</a>.
+                        Among these were teams of 12-14 year old girls as well as a high school men's team. This entailed offering personalized feedback, organizing practices,
+                        mentoring, and working with other coaches, parents, and players.</p>
+                </div>
+                <div class="space"></div>
+                <div class="textbox3_s">
+                    <h2>STEMFest:</h2>
+                    <p>The <a href="https://swe.org/">Society of Women in Engineering (SWE)</a> at TAMU organized STEMFest.
+                        I worked closely with 7 others as a member of the Logistics Commitee. We coordinated an event promoting STEM for 100+ Girl Scouts. This 
+                        involved months of planning and work, including outreach to campus organizations, balancing budgets, managing event 
+                        entertainment, and arranging event venues. </p>
+                </div>
             </div>
-            <div class="space"></div>
-            <div class="textbox">
-                <p><strong>Vounteer Coaching:</strong> I volunteered multiple times coaching youth volleyball teams involved in different programs at NRG Volleyball.
-                    Among these were teams of 12-14 year old girls as well as a high school men's team. This entailed offering personalized feedback, organizing practices,
-                    mentoring, and working with other coaches, parents, and players.</p>
-            </div>
-            <div class="space"></div>
-            <div class="textbox">
-                <p><strong>STEMFest:</strong> The Society of Women in Engineering (SWE) at TAMU organized STEMFest.
-                    I worked closely with 7 others as a member of the Logistics Commitee. We coordinated an event promoting STEM for 100+ Girl Scouts. This 
-                    involved months of planning and work, including outreach to campus organizations, balancing budgets, managing event 
-                    entertainment, and arranging event venues. </p>
-            </div>
-
+            
         </main>
         
+        <footer>
+            <div> 
+                <h3>Let's Explore:</h3>
+                <ul class="horizontal_list">
+                    <li> 
+                        <a href="index.html" class="button-link">Home</a> 
+                    </li>
+                    <li> 
+                        <a href="portfolio_page.html" class="button-link">Portfolio</a> 
+                    </li>
+                    <li> 
+                        <a href="qualifications_page.html" class="button-link">Qualifications</a> 
+                    </li>
+                    <li> 
+                        <a href="service_page.html" class="button-link">Service</a> 
+                    </li>
+                    <li> 
+                        <a href="ai_page.html" class="button-link">AI Generated</a> 
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+        <script src="functions.js"></script>
 
     </body>
 

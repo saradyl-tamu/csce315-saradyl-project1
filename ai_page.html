@@ -1,73 +1,54 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-    </head>
-    
-    <body>
-        
-        <header>
-            <h1>AI Generated</h1>
-        </header>
-
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Text Boxes with Animation</title>
+    <title>AI Generated</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
+            font-family: Rockwell, sans-serif;
+            font-size: 18px;
         }
-
         .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-
-        .text-box {
-            background-color: #ffffff;
-            padding: 20px;
             text-align: center;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-            margin: 10px;
+            margin-top: 50px;
         }
-
-        .plant-animation {
-            width: 200px;
-            height: 100px;
-            margin: 50px;
-            justify-content: center;
-            animation: floatPlants 5s infinite;
+        .text-box {
+            border: 2px solid pink;
+            padding: 10px;
+            margin: 100px 0;
+            width: 80%;
+            max-width: 400px;
+            margin: 0 auto;
         }
-
-        @keyframes floatPlants {
-            0% {
-                transform: translate(0, 0);
-            }
-            50% {
-                transform: translate(0, -10px);
-            }
-            100% {
-                transform: translate(0, 0);
-            }
+        .header {
+            text-align: left;
+            margin-left: 20px;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .pink-link {
+            color: pink;
         }
     </style>
-
+</head>
+<body>
+    <div class="header">
+        <h1>AI Generated</h1>
+    </div>
     <div class="container">
         <div class="text-box">
-            <h1>Goal of Prompt: create an html page with a plant animation</h1>
+            <p><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi9qsP5oKOBAxU3mGoFHbyKDgMQFnoECAYQAQ&url=https%3A%2F%2Fchat.openai.com%2F&usg=AOvVaw139HWUX4D802zbDuJCdFg9&opi=89978449" class="pink-link">ChatGPT</a></p>
         </div>
         <div class="text-box">
-            <h1>Prompt: can you please generate an html page with 2 centered text boxes, one saying "goal of prompt" and the other one below it saying "prompt" and include an animation of light green plants below it?</h1>
+            <p class="bold">Goal of Prompt:</p>
+            <p>create an HTML file with a header and 2 text boxes</p>
         </div>
-        <div class="plant-animation">
-            <!-- Add your animation of light green plants here -->
-            <img src="images/plant_animation.gif" alt="Plant Animation">
+        <div class="text-box">
+            <p class="bold">Prompt:</p>
+            <p>could you please generate HTML code that does the following: make a header at the top left of the page that says "AI Generated", then make 3 centered text boxes with pink borders with a 100px margin between them, use the font-family Rockwell for all text, and make the font-size 18px. The top textbox should have a pink hyperlink to <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi9qsP5oKOBAxU3mGoFHbyKDgMQFnoECAYQAQ&url=https%3A%2F%2Fchat.openai.com%2F&usg=AOvVaw139HWUX4D802zbDuJCdFg9&opi=89978449">ChatGPT</a>, the second textbox should say "Goal of Prompt: create an HTML file with a header and 2 text boxes" and the one below it should say "Prompt:" and include the prompt I'm giving you now.</p>
         </div>
     </div>
+</body>
 </html>

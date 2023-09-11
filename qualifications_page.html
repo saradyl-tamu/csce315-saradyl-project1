@@ -1,50 +1,115 @@
 <!DOCTYPE html> 
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <!-- ensures proper rendering and touch zooming for all devices  -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link id="mainStyleSheet" rel="stylesheet" type="text/css" href="styles.css">
     </head>
     
     <body>
 
-        <header> 
-            <h1>Qualifications</h1>
-        </header>
+        <div class="header1">
+            <header> 
+                <h1>Qualifications</h1>
+            </header>
+        </div>
+        <div class="header2">
+            <header> 
+                <h1>SUBJECT: <span style="font-family: Bradley Hand;">Qualifications</span></h1>
+            </header>
+        </div>
+
+        <div class="toggle_button">
+            <button onclick="toggleStyleSheet()" type="button">Toggle Style</button>
+        </div>
 
         <main> 
+            
+            
+            <div class="quali2">
 
-            <!-- consider changing to div class for styling -->
+                <div class="textbox3_q" width="200px">
+                    <h2>Skills:</h2>
+                    
+                    <p>
+                        C++, Python, HTML, CSS, Microsoft Excel, Googling
+                    </p>
+                </div>
+
+                <div class="space"></div>
+
+                <div class="textbox2_q" width="200px">
+                    <h2>Interests:</h2>
+                    
+                    <p>
+                        Web Development, Artificial Intelligience, Machine Learning, Weightlifting,
+                        Volleyball, Formula 1
+                    </p>
+                </div>
+            </div>
+
             <div class="resume">
                 <h1>Resume</h1>
 
-                <object data="resume.pdf" type="application/pdf" width="1000px" height="1200px" title="Resume">
+                <object data="resume.pdf" type="application/pdf" width="80%" height="800 px" title="Resume">
                     <p>Unable to display PDF file. <a href="resume.pdf"> Download</a> here.</p>
                 </object>
             </div>
-            
-            <div class="space"></div>
 
-            <div class="textbox">
-                <h2>Skills:</h2>
+            <div class="quali1">
                 
-                <p>
-                    C++, Python, HTML, CSS, Microsoft Excel, Googling
-                </p>
-            </div>
-
-            <div class="space"></div>
-
-            <div class="textbox">
-                <h2>Interests:</h2>
                 
-                <p>
-                    Web Development, Artificial Intelligience, Machine Learning, Weightlifting,
-                    Volleyball, Formula 1
-                </p>
+                <div class="space"></div>
+
+                <div class="textbox3">
+                    <h2>Skills:</h2>
+                    
+                    <p>
+                        C++, Python, HTML, CSS, Microsoft Excel, Googling
+                    </p>
+                </div>
+
+                <div class="space"></div>
+
+                <div class="textbox2">
+                    <h2>Interests:</h2>
+                    
+                    <p>
+                        Web Development, Artificial Intelligience, Machine Learning, Weightlifting,
+                        Volleyball, Formula 1
+                    </p>
+                </div>
             </div>
-            
 
         </main>
         
+        <footer>
+            <div> 
+                <h3>Let's Explore:</h3>
+                <ul class="horizontal_list">
+                    <li> 
+                        <a href="index.html" class="button-link">Home</a> 
+                    </li>
+                    <li> 
+                        <a href="portfolio_page.html" class="button-link">Portfolio</a> 
+                    </li>
+                    <li> 
+                        <a href="qualifications_page.html" class="button-link">Qualifications</a> 
+                    </li>
+                    <li> 
+                        <a href="service_page.html" class="button-link">Service</a> 
+                    </li>
+                    <li> 
+                        <a href="ai_page.html" class="button-link">AI Generated</a> 
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+        <script src="functions.js"></script>
 
     </body>
 

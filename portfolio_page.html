@@ -1,23 +1,47 @@
 <!DOCTYPE html> 
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <!-- ensures proper rendering and touch zooming for all devices  -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link id="mainStyleSheet" rel="stylesheet" type="text/css" href="styles.css">
     </head>
     
     <body>
+        <div class="header1">
+            <header> 
+                <h1>Technical Portfolio</h1>
+            </header>
+        </div>
+        <div class="header2">
+            <header> 
+                <h1>SUBJECT: <span style="font-family: Bradley Hand;">Technical Portfolio</span></h1>
+            </header>
+        </div>
         
-        <header>
-            <h1>Portfolio</h1>
-        </header>
+        <div class="toggle_button">
+            <button onclick="toggleStyleSheet()" type="button">Toggle Style</button>
+        </div>
         
         <main> 
+
+            <div class="space"></div>
+
+            <div class="textbox1">
+                <h2>Languages:</h2>
+                <p style="font-size: 25px;">C++, Python, HTML, CSS, JavaScript (beginner)</p>
+            </div>
+
+            <div class="space"></div>
 
             <!--https://codedamn.com/news/frontend/how-to-put-image-and-text-side-by-side-in-html-->
             <div class="project1">
                 <div class="text1">
-                    <div class="textbox">
+                    <div class="textbox2" width="800px">
                         <h2>REViews</h2>
-                        <p>REViews is a project I completed with a team of 4 at TAMU HowdyHack.
+                        <p>REViews is a project I completed with a team of 4 at <a href="https://tamuhack.org/"">TAMU HowdyHack</a>.
                             We had never met, and in under 24 hours, we were able to conceive and create REViews,
                             a website meant to act as a forum for TAMU students to discuss and learn about professors,
                             classes, and organizations at Texas A&M. Using Figma, AWS, and Next.JS, we were able to fully
@@ -32,6 +56,34 @@
             </div>
 
         </main>
+
+        <div class="space"></div>
+        <div class="space"></div>
+
+        <footer>
+            <div> 
+                <h3>Let's Explore:</h3>
+                <ul class="horizontal_list">
+                    <li> 
+                        <a href="index.html" class="button-link">Home</a> 
+                    </li>
+                    <li> 
+                        <a href="portfolio_page.html" class="button-link">Portfolio</a> 
+                    </li>
+                    <li> 
+                        <a href="qualifications_page.html" class="button-link">Qualifications</a> 
+                    </li>
+                    <li> 
+                        <a href="service_page.html" class="button-link">Service</a> 
+                    </li>
+                    <li> 
+                        <a href="ai_page.html" class="button-link">AI Generated</a> 
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+        <script src="functions.js"></script>
 
     </body>
 

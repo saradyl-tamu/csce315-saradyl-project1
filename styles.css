@@ -1,4 +1,4 @@
-header {
+.header1 {
     font-family: 'Rockwell', monospace;
     font-size: xx-large;
     text-align: left;
@@ -10,10 +10,19 @@ header:hover {
     background-color: #BC7F6A;
 }
 
+.header2 {
+    display: none;
+}
+
 body {
     color: #DCCCBE;
     background-color: #4E5B47;   
     text-align: center;
+    cursor: url()
+}
+
+footer {
+    margin-top: 125px;
 }
 
 a {
@@ -27,12 +36,16 @@ ul {
     
 }
 
-.pics {
+.pics1 {
     display: flex;
 }
 
-.pics img {
+.pics1 img {
     margin-right: 0;
+}
+
+.pics2 {
+    display: none;
 }
 
 .col {
@@ -47,6 +60,33 @@ ul {
     display: table;
 }
 
+.horizontal_list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.horizontal_list li {
+    margin-right: 10px;
+}
+
+button {
+    display: inline-block; /* Make it a block-level element */
+    padding: 10px 20px; /* Add padding for spacing */
+    background-color: #bc7f6a; /* Button background color */
+    color: #DCCCBE; /* Text color */
+    border: none; /* Remove the default border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Show a pointer cursor on hover */
+    margin: 5px;
+}
+
+.toggle_button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
 .button-link {
     display: inline-block; /* Make it a block-level element */
     padding: 10px 20px; /* Add padding for spacing */
@@ -56,7 +96,7 @@ ul {
     border: none; /* Remove the default border */
     border-radius: 5px; /* Add rounded corners */
     cursor: pointer; /* Show a pointer cursor on hover */
-    margin: 5px
+    margin: 5px;
 }
 
 .button-link:hover {
@@ -64,7 +104,62 @@ ul {
     background-color: #BC7F6A;
 }
 
-.textbox {
+.textbox1 {
+    line-height: 1.5;
+    text-align: center;
+    margin: auto;
+    width: 700px;
+    padding: 10px;
+    border: 3px dashed #bc7f6a;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.textbox2 {
+    line-height: 1.5;
+    text-align: center;
+    margin: auto;
+    width: 700px;
+    padding: 10px;
+    border: 3px dashed #bc7f6a;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.textbox3 {
+    line-height: 1.5;
+    text-align: center;
+    margin: auto;
+    width: 700px;
+    padding: 10px;
+    border: 3px dashed #bc7f6a;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.textbox1_s {
+    line-height: 1.5;
+    text-align: center;
+    margin: auto;
+    width: 700px;
+    padding: 10px;
+    border: 3px dashed #bc7f6a;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.textbox2_s {
+    line-height: 1.5;
+    text-align: center;
+    margin: auto;
+    width: 700px;
+    padding: 10px;
+    border: 3px dashed #bc7f6a;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.textbox3_s {
     line-height: 1.5;
     text-align: center;
     margin: auto;
@@ -90,9 +185,32 @@ ul {
 .image1 {
     flex: 1;
     text-align: center;
-    
 }
 
 .space {
-    margin: 50px;
+    margin: 75px;
+}
+
+.socials {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.socials li {
+    margin-right: 40px;
+}
+
+.socials img {
+    width: 60px;
+    height: 60px;
+}
+
+.quali1 {
+    display: contents;
+}
+
+.quali2 {
+    display: none;
 }
